@@ -1,0 +1,32 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: $white50;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  margin-bottom: 40px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__item::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../assets/svg/chevron-right.svg") no-repeat center;
+    background-size: contain;
+    margin-left: 4px;
+  }
+  &__item:last-child {
+    color: $white90;
+  }
+  &__item:last-child::after {
+    content: none;
+  }
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}

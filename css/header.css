@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 16px 40px;
+  margin-bottom: 64px;
+  background-color: #1E1E20;
+}
+.header__rightSide {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #BDBDBE;
+  margin-left: auto;
+}
+.header__menu-btn {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .header__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-color: transparent;
+    padding: 10px;
+  }
+  .header__menu-btn img {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header {
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  width: 126px;
+  height: 15px;
+  margin-right: 84px;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+}
+.menu__item {
+  color: #FEFEFF;
+}
+@media screen and (max-width: 1023px) {
+  .menu {
+    display: none;
+  }
+}
+
+.lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.lang__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.lang__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+}
+.lang__toggle[aria-expanded=true] + .lang__menu {
+  display: block;
+}
+.lang__toggle img {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.lang span {
+  font-size: inherit;
+  color: inherit;
+}
+@media screen and (max-width: 1023px) {
+  .lang {
+    display: none;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+}
+.contact span {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+.auth:hover {
+  color: #919192;
+}
+@media screen and (max-width: 1023px) {
+  .auth {
+    display: none;
+  }
+}

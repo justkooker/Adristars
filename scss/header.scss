@@ -1,0 +1,129 @@
+@import "./vars";
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 16px 40px;
+  margin-bottom: 64px;
+  background-color: $white05;
+
+  &__rightSide {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: $white70;
+    margin-left: auto;
+  }
+  &__menu-btn {
+    display: none;
+
+    @media screen and (max-width: 1023px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 8px;
+      backdrop-filter: blur(10px);
+      background-color: transparent;
+      padding: 10px;
+
+      & img {
+        display: block;
+      }
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 0;
+  }
+}
+.logo {
+  width: 126px;
+  height: 15px;
+  margin-right: 84px;
+}
+.menu {
+  display: flex;
+  gap: 24px;
+  &__item {
+    color: $white;
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  &__toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+  }
+  &__toggle[aria-expanded="true"] + &__menu {
+    display: block;
+  }
+
+  &__toggle img {
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  & span {
+    font-size: inherit;
+    color: inherit;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+
+  & span {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+
+  &:hover {
+    color: $white50;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo" aria-label="link to homepage">
+        <a href="#"><img src="./assets/svg/logo.svg" alt="logo" /></a>
+      </div>
+      <ul class="menu">
+        <li class="menu__item"><a href="#">Book</a></li>
+        <li class="menu__item"><a href="#">Help</a></li>
+        <li class="menu__item"><a href="#">FAQ</a></li>
+        <li class="menu__item"><a href="#">Rental Policies</a></li>
+        <li class="menu__item"><a href="#">Blog&Guides</a></li>
+      </ul>
+      <div class="header__rightSide">
+        <div class="lang">
+          <button
+            class="lang__toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="lang__current"></span>
+            <img
+              src="./assets/svg/chevron-down.svg"
+              alt="expand language options"
+            />
+          </button>
+          <ul class="lang__menu">
+            <li class="lang__item">EN</li>
+            <li class="lang__item">UK</li>
+          </ul>
+        </div>
+        <p class="contact">
+          <span><img src="./assets/svg/phone.svg" alt="phone-icon" /></span>+123
+          456 7890
+        </p>
+        <button class="auth" type="button">
+          <img src="./assets/svg/log-in.svg" alt="Sign In" />Sign In
+        </button>
+        <button class="header__menu-btn" type="button">
+          <img src="./assets/svg/menu-btn.svg" alt="icon stripes for burger button">
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <nav class="container" aria-label="Breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item"><a href="#">Home</a></li>
+          <li class="breadcrumb__item"><a href="#">Search results</a></li>
+          <li
+            class="breadcrumb__item breadcrumb__item_current"
+            aria-current="page"
+          >
+            Volkswagen Touareg
+          </li>
+        </ul>
+      </nav>
+      <article class="order container">
+        <div class="order__container">
+          <section class="car-info">
+           <div class="car-info__progress">
+              <div class="car-info__progress-bar">
+                <div ><div id="progress-step-1" class="circle-container "><span class="circle"></span></div><span>Add on extras</span></div>
+                <div ><div id="progress-step-2" class="circle-container "><span class="circle"></span></div><span>Insurance</span></div>
+                <div ><div id="progress-step-3" class="circle-container"><span class="circle"></span></div><span>Confirm Order</span></div>
+                <div ><div class="circle-container"><span class="circle"></span></div><span>Payment<span></span></div>
+              </div>
+              <div class="progress__info">
+                <div class="progress__img">
+                  <img src="./assets/img/car.png" alt="small car photo">
+                </div>
+                <div class="progress__text-container">
+                  <p class="text-m progress__name">Volkswagen Touareg</p>
+                  <p class="capture progress__text">or similar Intermediate<span>1 rental day</span></p>
+                </div>
+              </div>
+           </div>
+            <div class="car-info__wrap">
+              <div class="car-info__container">
+                <h3 class="h3 car-info__name">Volkswagen Touareg</h3>
+                <h4 class="h4 car-info__price">32,98<span>EUR/day</span></h4>
+                <ul class="text-l car-info__included-list">
+                  Included in Price
+                  <li class="text-light car-info__included-item">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken.svg"
+                        alt="icon check mark" /></span
+                    >Airport/City Fee
+                  </li>
+                  <li class="text-light car-info__included-item">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken.svg"
+                        alt="icon check mark" /></span
+                    >Local Tax
+                  </li>
+                  <li class="text-light car-info__included-item">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken.svg"
+                        alt="icon check mark" /></span
+                    >Registration Fee
+                  </li>
+                  <li class="text-light car-info__included-item">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken.svg"
+                        alt="icon check mark" /></span
+                    >Unlimited Mileage
+                  </li>
+                </ul>
+                <ul class="car-info__specification-list">
+                  <li class="car-info__specification-item">
+                    <span
+                      ><img
+                        src="./assets/svg/car-doors.svg"
+                        alt="icon car doors" /></span
+                    >5 Doors
+                  </li>
+                  <li class="car-info__specification-item">
+                    <span
+                      ><img
+                        src="./assets/svg/luggage.svg"
+                        alt="icon luggage" /></span
+                    >3 Suitcase
+                  </li>
+                  <li class="car-info__specification-item">
+                    <span
+                      ><img
+                        src="./assets/svg/manual-gearbox.svg"
+                        alt="icon manual gearbox" /></span
+                    >5 Manual
+                  </li>
+                  <li class="car-info__specification-item">
+                    <span
+                      ><img
+                        src="./assets/svg/passangers.svg"
+                        alt="icon passangers" /></span
+                    >5 Passengers
+                  </li>
+                </ul>
+              </div>
+              <div class="car-info__image">
+                <img src="./assets/img/car.png" alt="selected car image" />
+              </div>
+            </div>
+            <button id="first-step" class="button car-info__proceed-btn">Proceed to Booking</button>
+
+          </section>
+          <section class="extras">
+            <h4 class="h4">Add on extras</h4>
+            <ul class="extras__list">
+              <li class="extras__item extras__item--active">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img src="./assets/svg/infinity.svg" alt="icon infinity"
+                  /></span>
+                  <p class="text-s">
+                    Unlimited Mileage <span class="subtitle-m">$15</span>
+                  </p>
+                </div>
+                <button class="extras__btn extras__btn--selected">
+                  <img
+                    src="./assets/svg/minus.svg"
+                    alt="icon remove extra service"
+                  />
+                </button>
+              </li>
+              <li class="extras__item">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img src="./assets/svg/globe.svg" alt="icon globe"
+                  /></span>
+                  <p class="text-s">
+                    Cross-border Fee<span class="subtitle-m">15 EUR</span>
+                  </p>
+                </div>
+                <button class="extras__btn">
+                  <img
+                    src="./assets/svg/plus.svg"
+                    alt="icon add extra service"
+                  />
+                </button>
+              </li>
+              <li class="extras__item">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img src="./assets/svg/petrol.svg" alt="icon petrol"
+                  /></span>
+                  <p class="text-s">
+                    Full Tank Service<span class="subtitle-m">15 EUR</span>
+                  </p>
+                </div>
+                <button class="extras__btn">
+                  <img
+                    src="./assets/svg/plus.svg"
+                    alt="icon add extra service"
+                  />
+                </button>
+              </li>
+              <li class="extras__item">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img src="./assets/svg/baby-seat.svg" alt="icon babyseat"
+                  /></span>
+                  <p class="text-s">
+                    Child Seat<span class="subtitle-m">15 EUR</span>
+                  </p>
+                </div>
+                <button class="extras__btn">
+                  <img
+                    src="./assets/svg/plus.svg"
+                    alt="icon add extra service"
+                  />
+                </button>
+              </li>
+              <li class="extras__item">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img
+                      src="./assets/svg/navigation-pointer.svg"
+                      alt="icon navigation pointer"
+                  /></span>
+                  <p class="text-s">
+                    GPS Navigation System<span class="subtitle-m">15 EUR</span>
+                  </p>
+                </div>
+                <button class="extras__btn">
+                  <img
+                    src="./assets/svg/plus.svg"
+                    alt="icon add extra service"
+                  />
+                </button>
+              </li>
+              <li class="extras__item">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img src="./assets/svg/wifi.svg" alt="icon wi-fi"
+                  /></span>
+                  <p class="text-s">
+                    Wi-Fi Hotspot<span class="subtitle-m">15 EUR</span>
+                  </p>
+                </div>
+                <button class="extras__btn">
+                  <img
+                    src="./assets/svg/plus.svg"
+                    alt="icon add extra service"
+                  />
+                </button>
+              </li>
+              <li class="extras__item">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img
+                      src="./assets/svg/additional-driver.svg"
+                      alt="icon driver"
+                  /></span>
+                  <p class="text-s">
+                    Additional Driver<span class="subtitle-m">15 EUR</span>
+                  </p>
+                </div>
+                <button class="extras__btn">
+                  <img
+                    src="./assets/svg/plus.svg"
+                    alt="icon add extra service"
+                  />
+                </button>
+              </li>
+              <li class="extras__item">
+                <div class="extras__container">
+                  <span class="extras__icon"
+                    ><img
+                      src="./assets/svg/headphones.svg"
+                      alt="icon headphones"
+                  /></span>
+                  <p class="text-s">
+                    Roadside Waiver<span class="subtitle-m">15 EUR</span>
+                  </p>
+                </div>
+                <button class="extras__btn">
+                  <img
+                    src="./assets/svg/plus.svg"
+                    alt="icon add extra service"
+                  />
+                </button>
+              </li>
+            </ul>
+            <button id="second-step" class="text-s button car-info__proceed-btn extras__continue-btn">Continue</button>
+          </section>
+          <section class="insurance">
+            <h4 class="h4">Insurance</h4>
+            <ul class="insurance__list">
+              <li class="item">
+                <div class="title-container">
+                  <span class="text-s item__category">No Insurance</span>
+                  <h3 class="h3">Free</h3>
+                </div>
+                <ul class="text-capture item__list">
+                  Important Notice:
+                  <li class="text-capture item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/alert-circle.svg"
+                        alt="icon alert" /></span
+                    >You are fully responsible for any damage to the vehicle
+                  </li>
+                  <li class="text-capture item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/alert-circle.svg"
+                        alt="icon alert" /></span
+                    >Full repair costs will be charged in case of an accident or
+                    damage (no financial limit).
+                  </li>
+                </ul>
+                <p class="text-capture-small item__recomendation">
+                  We strongly recommend choosing one of the insurance options to
+                  ensure a worry-free journey.
+                </p>
+              </li>
+              <li class="item item--active">
+                <div class="title-container">
+                  <span class="text-s item__category">Basic Insurance</span>
+                  <h3 class="h3">15 EUR/day</h3>
+                </div>
+                <ul class="text-capture item__list">
+                  <li class="text-capture item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken.svg"
+                        alt="icon check mark" /></span
+                    >Coverage for vehicle damage in case of an accident (with
+                    excess).
+                  </li>
+                  <li class="item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken.svg"
+                        alt="icon check mark" /></span
+                    >Limited. financial liability with a deductible/excess.
+                  </li>
+                  <li class="item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken.svg"
+                        alt="icon check mark" /></span
+                    >Partial coverage for car body damages (does not cover
+                    tires, windows, roof, or undercarriage).
+                  </li>
+                </ul>
+              </li>
+              <li class="item">
+                <div class="title-container">
+                  <span class="text-s item__category"
+                    >Comprehensive Insurance</span
+                  >
+                  <h3 class="h3">25 EUR/day</h3>
+                </div>
+                <ul class="text-capture item__list">
+                  <li class="text-capture item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken-green.svg"
+                        alt="icon check mark" /></span
+                    >Full coverage for all damages (including tires, windows,
+                    roof, and undercarriage).
+                  </li>
+                  <li class="item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken-green.svg"
+                        alt="icon check mark" /></span
+                    >Theft protection.
+                  </li>
+                  <li class="item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken-green.svg"
+                        alt="icon check mark" /></span
+                    >No deductible/excess (or minimal excess).
+                  </li>
+                  <li class="item__inner">
+                    <span
+                      ><img
+                        src="./assets/svg/check-circle-broken-green.svg"
+                        alt="icon check mark" /></span
+                    >Roadside assistance in case of breakdowns or accidents.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button id="third-step" class="button car-info__proceed-btn insurance__continue-btn">Conttinue</button>
+          </section>
+        </div>
+        <section class="confirming">
+          <h4 class="h4">Confirming Order</h4>
+          <form class="confirming-form">
+            <div class="input-container">
+              <label class="text-capture" for=""
+                >First Name *
+                <input
+                class="input"
+                  type="text"
+                  placeholder="Enter Your First Name"
+                  aria-label="Enter Your First Name"
+                  required
+                />
+              </label>
+              <label class="text-capture" for=""
+                >Last Name *
+                <input
+                class="input"
+                  type="text"
+                  placeholder="Enter Your Last Name"
+                  aria-label="Enter Your Last Name"
+                  required
+                />
+              </label>
+              <label class="text-capture" for=""
+                >Email *
+                <input
+                class="input "
+                  type="email"
+                  placeholder="olivia@untitledui.com"
+                  aria-label="Enter your email adress"
+                  required
+                />
+              </label>
+              <label class="text-capture" for=""
+                >Phone number *
+                <div class="input phone-input">
+                  <button type="button">
+                    US <span><img src="./assets/svg/chevron-down.svg" alt="icon chevron down"></span>
+                  </button>
+                  <input  class="input"
+                    type="tel"
+                    placeholder="+1 (555) 000-0000"
+                    aria-label="Enter your phone number"
+                    required
+                  />
+                </div>
+               
+              </label>
+              <div class="confirming-form__conditions confirming-form__conditions--tablet">
+                <input type="checkbox" id="conditions" />
+                <label for="conditions">I accept the terms & conditions</label>
+              </div>
+            </div>
+            <div class="summary">
+              <dl class="summary__list">
+                <div class="summary__item">
+                  <dt class="text-capture summary__label">Date</dt>
+                  <dd class="text-light summary__value">
+                    Jan 1 | 08:00 - Jan 2 | 20:00
+                  </dd>
+                </div>
+                <div class="summary__item">
+                  <dt class="text-capture summary__label">Location</dt>
+                  <dd class="text-light summary__value">
+                    Bratislava Bus... - Bratislava Bus...
+                  </dd>
+                </div>
+                <div class="summary__item">
+                  <dt class="text-capture summary__label">
+                    Volkswagen Touareg
+                  </dt>
+                  <dd class="text-light summary__value">32,98 EUR</dd>
+                </div>
+                <div class="summary__item">
+                  <dt class="text-capture summary__label">Basic Insurance</dt>
+                  <dd class="text-light summary__value">15 EUR</dd>
+                </div>
+                <div class="summary__item">
+                  <dt class="text-m summary__label">Total</dt>
+                  <dd class="text-m summary__value">62,98 EUR</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="confirming-form__conditions confirming-form__conditions--mob">
+              <input type="checkbox" id="conditions-mob" />
+              <label for="conditions-mob">I accept the terms & conditions</label>
+            </div>
+       
+          </form>
+          <div class="confirming-form__btns">
+            <button class="text-s button" type="submit">Pay Cash</button>
+            <button class="text-s button" type="submit">Pay Card</button>
+          </div>
+        </section>
+      </article>
+      <section class="contact-us">
+        <div class="container">
+          <div class="avatars">
+            <div class="avatar">
+              <div class="avatar__container">
+                <img src="./assets/img/avatar1.png" alt="human photo " />
+              </div>
+            </div>
+            <div class="avatar">
+              <div class="avatar__container">
+                <img src="./assets/img/avatar2.png" alt="human photo " />
+              </div>
+            </div>
+            <div class="avatar">
+              <div class="avatar__container">
+                <img src="./assets/img/avatar3.png" alt="human photo " />
+              </div>
+            </div>
+          </div>
+          <div class="contact-us__text-container">
+            <p class="subtitle-m contact-us__subtitle">Still have questions?</p>
+            <p class="text-s contact-us__text">
+              Can’t find the answer you’re looking for? Please chat to our
+              friendly team.
+            </p>
+          </div>
+          <button class="contact-us__btn button subtitle-s">Contact Us</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__container">
+        <div class="footer__leftSide">
+          <div class="logo" aria-label="link to homepage">
+            <a href="#"><img src="./assets/svg/logo.svg" alt="logo" /></a>
+          </div>
+          <p class="footer__text">Your Trusted Ride Awaits.</p>
+        </div>
+        <form class="footer__form">
+          <label for="">Stay up to date
+            <input
+              class="text-capture input footer__input"
+              type="email"
+              placeholder="Enter your email"
+              aria-label="Enter your email adress"
+            />
+          </label>
+          <button class="button footer__btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="rights">
+        <p class="text-inputs rights__text">© 2077 Untitled UI. All rights reserved.</p>
+        <ul class="rights__menu">
+         <li> <a href="#">Terms</a></li>
+         <li> <a href="#">Privacy</a></li>
+         <li><a href="#">Cookies</a></li>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
