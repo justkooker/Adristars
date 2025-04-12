@@ -1,13 +1,18 @@
 {
-    "liveSassCompile.settings.formats": [
-      {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/css"
-      }
-    ],
-    "liveSassCompile.settings.includeItems": [
-      "**/scss/*.scss"
-    ],
-    "liveSassCompile.settings.generateMap": false
-  }
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css" 
+    }
+  ],
+  "liveSassCompile.settings.includeItems": [
+    "**/*.scss"  
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/_*.scss",        
+
+    ".vscode/**"
+  ],
+  "liveSassCompile.settings.generateMap": false
+}

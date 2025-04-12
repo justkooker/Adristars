@@ -1,4 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxygen&display=swap");
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #D3D3D3;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1464px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+.h3 {
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.text-s {
+  font-size: 1rem;
+}
+
+.text-l {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.text-light {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.text-s {
+  font-size: 1rem;
+}
+
+.text-capture {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.text-capture-small {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.subtitle-m {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.subtitle-s {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.text-inputs {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  color: #FEFEFF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input {
+  height: 48px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #4F4F51;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background-color: transparent;
+  color: #FEFEFF;
+  text-overflow: ellipsis;
+}
+.input::-moz-placeholder {
+  color: #919192;
+}
+.input::placeholder {
+  color: #919192;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -1175,133 +1304,4 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #121214;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover {
-  color: #D3D3D3;
-}
-
-p {
-  margin: 0;
-}
-
-button {
-  border: none;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1464px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1023px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-.h3 {
-  font-family: Inter;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-.h4 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.text-s {
-  font-size: 1rem;
-}
-
-.text-l {
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.text-light {
-  font-size: 0.875rem;
-  font-weight: 300;
-}
-
-.text-s {
-  font-size: 1rem;
-}
-
-.text-capture {
-  font-size: 0.875rem;
-  line-height: 1.4;
-}
-
-.text-capture-small {
-  font-size: 0.75rem;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-.subtitle-m {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.subtitle-s {
-  font-family: Inter;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.text-inputs {
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.button {
-  display: flex;
-  width: 100%;
-  height: 56px;
-  padding: 18px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex: 1 0 0;
-  color: #FEFEFF;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.input {
-  height: 48px;
-  padding: 12px 14px;
-  border-radius: 8px;
-  border: 1px solid #4F4F51;
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  background-color: transparent;
-  color: #FEFEFF;
-  text-overflow: ellipsis;
-}
-.input::-moz-placeholder {
-  color: #919192;
-}
-.input::placeholder {
-  color: #919192;
 }
